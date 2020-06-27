@@ -27,8 +27,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 500px;
         height: 100vh;
+        width: 100vw;
     }
 
     .container {
@@ -46,7 +46,6 @@
         font-size: 2rem;
         color: white;
         text-transform: uppercase;
-        /* font-weight: bolder; */
     }
 
     p {
@@ -79,13 +78,17 @@
         width: 100%;
     }
 
-    /* #decrease {
-        align-self: flex-start;
+    @media only screen and (max-width: 765px) {
+        .container {
+            width: 80%;
+        }
+        p {
+            font-size: 8rem;
+        }
+        button {
+            font-size: 12px;
+        }
     }
-    #increase {
-        align-self: flex-end;
-        display: inline;
-    } */
 </style>
 <script src="./app.js"></script>
 </html>

@@ -7,7 +7,9 @@ const increaseBtn = document.getElementById('increase');
 function decreaseNumber() {
     numberCounter.textContent--;
 
-    if (numberCounter.textContent < 0) {
+    if(numberCounter.textContent == 0){
+        numberCounter.style.color = 'black';
+    }else if (numberCounter.textContent < 0) {
         numberCounter.style.color = 'red'; 
     }
 }
@@ -15,8 +17,10 @@ function decreaseNumber() {
 function increaseNumber() {
     numberCounter.textContent++;
 
-    if (numberCounter.textContent > 0) {
-        numberCounter.style.color = 'green'; 
+    if(numberCounter.textContent == 0){
+        numberCounter.style.color = 'black';
+    } else if (numberCounter.textContent > 0 ) {
+        numberCounter.style.color = 'green';
     }
 }
 
